@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import {
   FormEvent,
   KeyboardEvent,
@@ -503,9 +505,14 @@ export function ResearchInterface() {
           </button>
 
           <div className="mobile-brand">
-            <div className="mobile-brand-mark">
-              A
-            </div>
+            <Image
+              src="/images/obsidian-logo.png"
+              alt="Aurelian"
+              width={28}
+              height={28}
+              className="mobile-brand-mark"
+              priority
+            />
 
             Aurelian
           </div>
@@ -533,9 +540,14 @@ export function ResearchInterface() {
           {showLanding ? (
             <section className="landing-section">
               <div className="landing-orb">
-                <div className="landing-orb-inner">
-                  A
-                </div>
+                <Image
+                  src="/images/obsidian-logo.png"
+                  alt="Aurelian"
+                  width={76}
+                  height={76}
+                  className="landing-logo"
+                  priority
+                />
               </div>
 
               <div className="eyebrow landing-eyebrow">

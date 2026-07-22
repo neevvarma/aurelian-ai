@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import type {
   RecentResearchItem,
 } from "@/types/research";
@@ -16,12 +18,14 @@ type SidebarProps = {
 
 function AurelianMark() {
   return (
-    <div
+    <Image
+      src="/images/obsidian-logo.png"
+      alt="Aurelian"
+      width={40}
+      height={40}
       className="aurelian-mark"
-      aria-hidden="true"
-    >
-      A
-    </div>
+      priority
+    />
   );
 }
 
